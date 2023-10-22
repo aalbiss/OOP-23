@@ -127,7 +127,7 @@ public class Garage {
 			}
 		}
 	}
-
+	
 	public void eliminazione() {
 		Scanner KB = new Scanner(System.in);
 
