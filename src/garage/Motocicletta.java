@@ -7,6 +7,7 @@ public class Motocicletta extends VeicoloAMotore {
 	private int cilindrata;
 	
 	public Motocicletta() {
+		super();
 		cilindrata=0;
 	}
 

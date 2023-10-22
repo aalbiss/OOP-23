@@ -30,19 +30,19 @@ public class Garage {
 
 	public void inserimentoAuto() {
 		Scanner KB = new Scanner(System.in);
-		visualizzaVuoti();
 		int inserimento;
-		do {
-			Utility.doveInserire();
-			inserimento= KB.nextInt()-1;
-			if(garage[inserimento]!=null) {
-				System.out.println("posto gia occupato");
-			}
-		}while(garage[inserimento]!=null);
-
-		KB.nextLine();
-
 		if(veicoliInseriti<dim) {
+			visualizzaVuoti();
+			do {
+				Utility.doveInserire();
+				inserimento= KB.nextInt()-1;
+				if(garage[inserimento]!=null) {
+					System.out.println("posto gia occupato");
+				}
+			}while(garage[inserimento]!=null);
+
+			KB.nextLine();
+
 			Automobile a = new Automobile();
 			a.inserimento();
 			garage[inserimento]=a;
@@ -55,19 +55,19 @@ public class Garage {
 
 	public void inserimentoMoto() {
 		Scanner KB = new Scanner(System.in);
-		visualizzaVuoti();
-
 		int inserimento;
-		do {
-			Utility.doveInserire();
-			inserimento= KB.nextInt()-1;
-			if(garage[inserimento]!=null) {
-				System.out.println("posto gia occupato");
-			}
-		}while(garage[inserimento]!=null);
-		KB.nextLine();
-
 		if(veicoliInseriti<dim) {
+			visualizzaVuoti();
+			do {
+				Utility.doveInserire();
+				inserimento= KB.nextInt()-1;
+				if(garage[inserimento]!=null) {
+					System.out.println("posto gia occupato");
+				}
+			}while(garage[inserimento]!=null);
+
+			KB.nextLine();
+
 			Motocicletta m = new Motocicletta();
 			m.inserimento();
 			garage[inserimento]=m;
@@ -80,21 +80,19 @@ public class Garage {
 
 	public void inserimentoFurgone() {
 		Scanner KB = new Scanner(System.in);
-		visualizzaVuoti();
-
 		int inserimento;
-		do {
-			Utility.doveInserire();
-			inserimento= KB.nextInt()-1;
-			if(garage[inserimento]!=null) {
-				System.out.println("posto gia occupato");
-			}
-		}while(garage[inserimento]!=null);
-
-		KB.nextLine();
-
-
 		if(veicoliInseriti<dim) {
+			visualizzaVuoti();
+			do {
+				Utility.doveInserire();
+				inserimento= KB.nextInt()-1;
+				if(garage[inserimento]!=null) {
+					System.out.println("posto gia occupato");
+				}
+			}while(garage[inserimento]!=null);
+
+			KB.nextLine();
+
 			Furgone f = new Furgone();
 			f.inserimento();
 			garage[inserimento]=f;
@@ -132,7 +130,7 @@ public class Garage {
 
 	public void eliminazione() {
 		Scanner KB = new Scanner(System.in);
-		
+
 		int inserimento;
 
 		do {

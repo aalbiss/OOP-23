@@ -7,6 +7,7 @@ public class Automobile extends VeicoloAMotore {
 	private int nPorte;
 	
 	public Automobile() {
+		super();
 		nPorte = 0;
 	}
 
