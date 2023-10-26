@@ -25,6 +25,9 @@ public class Automobile extends VeicoloAMotore {
 	}
 
 	public void inserimento() {
+
+		System.out.println("CIAO COME VA");
+		
 		Scanner KB = new Scanner(System.in);
 		int nPorte;
 		super.inserimento();
