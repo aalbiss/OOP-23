@@ -17,6 +17,7 @@ public class Automobile extends VeicoloAMotore {
 
 	public int getnPorte() {
 		return nPorte;
+
 	}
 
 	public void setnPorte(int nPorte) {
